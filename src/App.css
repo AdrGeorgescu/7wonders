@@ -1,31 +1,121 @@
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
 .App {
+  text-align: center;
+  max-width: 768px;
+  margin: 10px auto;
+}
+
+.winner {
+  background-color: tomato;
+  color: #fff;
+}
+
+.firstColumn {
+  min-width: 45px;
+}
+
+.resetButton {
+  width: 40%;
+  height: 50px;
+  margin: 10px;
+}
+
+.playersNames {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.playersNames input,
+.playersNames button {
+  width: 90%;
+  height: 30px;
+  margin: 10px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.playersNames input {
+  padding: 0 10px;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.playerImage {
+  background: url('images/player.png');
+  background-size:100% 100%;
+}
+
+.coinsImage {
+  background: url('images/coin.png');
+  background-size:100% 100%;
+}
+
+.blueCardsImage {
+  background: url('images/blueCards.png');
+  background-size:100% 100%;
+}
+
+.yellowCardsImage {
+  background: url('images/yellowCards.png');
+  background-size:100% 100%;
+}
+
+.purpleCardsImage {
+  background: url('images/purpleCards.png');
+  background-size:100% 100%;
+}
+
+.wondersImage {
+  background: url('images/wonders.png');
+  background-size:100% 100%;
+}
+
+.greenCardsImage {
+  background: url('images/greenCards.png');
+  background-size:100% 100%;
+}
+
+.totalPoints {
+  background: url('images/totalPoints.png');
+  background-size:100% 100%;
+  width: 40px;
+  height: 27px;
+}
+
+.armyImage {
+  background: url('images/army.png');
+  background-size:100% 100%;
+}
+
+table {
+  width: 100%;
+}
+
+table input {
+  box-sizing: border-box;
+  border: 0;
+  width: calc(100% - 10px);
+  font-size: 16px;
+}
+
+textarea:focus, input:focus{
+  outline: none;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +125,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+th {
+  position: sticky;
+  top: 0px;
+  background: white;
 }
