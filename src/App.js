@@ -16,7 +16,8 @@ const categories = [
 ];
 
 function App() {
-
+    // TODO:
+    // 1. replace the table with divs
   const [ players, setPlayers ] = useState(getLocalPlayers() || []);
 
   const total = (e) => {
